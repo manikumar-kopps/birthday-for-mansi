@@ -43,6 +43,13 @@ A beautiful, romantic, interactive birthday website crafted like a personal love
    ```
    The production-ready files will be in the `dist/` directory.
 
+4. **Run with Python & Gunicorn** (Production Server):
+   ```bash
+   pip install -r requirements.txt
+   gunicorn app:app
+   ```
+   The app will be served via Gunicorn at `http://127.0.0.1:8000`.
+
 ---
 
 ## 🎨 How to Customize Content
