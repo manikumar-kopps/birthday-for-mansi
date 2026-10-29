@@ -36,15 +36,15 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({
         onClick={toggleMusic}
         className={`flex items-center gap-2.5 px-4 py-2 rounded-full shadow-md backdrop-blur-md transition-all duration-300 border ${
           isPlaying
-            ? 'bg-pink-500/90 text-white border-pink-300 ring-4 ring-pink-200/50 scale-105'
-            : 'bg-white/80 text-pink-700 border-pink-200 hover:bg-pink-50'
+            ? 'bg-amber-500/95 text-white border-yellow-300 ring-4 ring-yellow-200/50 scale-105'
+            : 'bg-white/90 text-amber-900 border-amber-200 hover:bg-amber-50'
         }`}
         title={isPlaying ? 'Pause romantic music' : 'Play romantic music'}
         aria-label="Toggle background music"
       >
         <span
           className={`inline-flex items-center justify-center w-7 h-7 rounded-full ${
-            isPlaying ? 'bg-pink-600 animate-spin text-white' : 'bg-pink-100 text-pink-600'
+            isPlaying ? 'bg-amber-600 animate-spin text-white' : 'bg-amber-100 text-amber-700'
           }`}
           style={{ animationDuration: '4s' }}
         >
@@ -58,8 +58,8 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({
             {title}
           </span>
         </div>
-        <span className="ml-1 text-pink-200">
-          {isPlaying ? <Volume2 className="w-4 h-4 text-white" /> : <VolumeX className="w-4 h-4 text-pink-400" />}
+        <span className="ml-1">
+          {isPlaying ? <Volume2 className="w-4 h-4 text-white" /> : <VolumeX className="w-4 h-4 text-amber-500" />}
         </span>
       </button>
     </div>

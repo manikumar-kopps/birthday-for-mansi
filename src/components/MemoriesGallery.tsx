@@ -73,7 +73,7 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
     <section className="relative py-24 px-4 max-w-6xl mx-auto">
       {/* Title */}
       <div className="text-center mb-12">
-        <span className="text-sm font-semibold tracking-widest text-pink-500 uppercase bg-pink-100/80 px-4 py-1.5 rounded-full border border-pink-200">
+        <span className="text-sm font-semibold tracking-widest text-amber-800 uppercase bg-amber-100/90 px-4 py-1.5 rounded-full border border-amber-200">
           Photo Album
         </span>
         <h2 className="font-cursive text-4xl sm:text-6xl font-bold text-slate-800 mt-3 mb-2">
@@ -98,27 +98,27 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
         <div className="flex flex-col items-center justify-center my-8">
           <div
             onClick={handlePopSurpriseBox}
-            className={`group relative max-w-md w-full bg-gradient-to-br from-pink-200 via-rose-100 to-purple-200 p-8 sm:p-12 rounded-3xl shadow-2xl border-4 border-pink-300/80 cursor-pointer text-center select-none transform hover:-translate-y-2 hover:scale-[1.02] active:scale-95 transition-all duration-300 ${
+            className={`group relative max-w-md w-full bg-gradient-to-br from-amber-200 via-yellow-100 to-amber-100 p-8 sm:p-12 rounded-3xl shadow-2xl border-4 border-amber-300 cursor-pointer text-center select-none transform hover:-translate-y-2 hover:scale-[1.02] active:scale-95 transition-all duration-300 ${
               isBoxShaking ? 'animate-box-shake' : ''
             }`}
           >
             {/* Glowing Aura Ring */}
-            <div className="absolute inset-0 rounded-3xl bg-pink-400/20 blur-xl animate-pulse pointer-events-none"></div>
+            <div className="absolute inset-0 rounded-3xl bg-yellow-400/25 blur-xl animate-pulse pointer-events-none"></div>
 
             {/* Special Delivery Badge */}
-            <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/90 text-pink-700 font-bold text-xs shadow-sm mb-6 border border-pink-200">
+            <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/95 text-amber-800 font-bold text-xs shadow-sm mb-6 border border-amber-200">
               <Sparkles className="w-4 h-4 text-amber-500 animate-spin" style={{ animationDuration: '6s' }} />
               <span>Special Surprise Memory Box</span>
-              <Heart className="w-3.5 h-3.5 fill-pink-500 text-pink-500" />
+              <Heart className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
             </div>
 
             {/* 3D Animated Gift Box Visual */}
             <div className="relative my-4 flex justify-center items-center">
               {/* Ribbon bow */}
-              <div className="w-32 h-32 rounded-3xl bg-gradient-to-tr from-pink-500 via-rose-500 to-purple-500 flex items-center justify-center shadow-xl group-hover:rotate-6 transition-transform relative">
+              <div className="w-32 h-32 rounded-3xl bg-gradient-to-tr from-amber-500 via-yellow-400 to-amber-600 flex items-center justify-center shadow-xl group-hover:rotate-6 transition-transform relative">
                 {/* Cross Ribbons */}
-                <div className="absolute inset-x-0 h-6 bg-yellow-300/90 top-1/2 -translate-y-1/2 shadow-xs"></div>
-                <div className="absolute inset-y-0 w-6 bg-yellow-300/90 left-1/2 -translate-x-1/2 shadow-xs"></div>
+                <div className="absolute inset-x-0 h-6 bg-amber-100/95 top-1/2 -translate-y-1/2 shadow-xs"></div>
+                <div className="absolute inset-y-0 w-6 bg-amber-100/95 left-1/2 -translate-x-1/2 shadow-xs"></div>
 
                 {/* Big Gift Icon */}
                 <Gift className="w-16 h-16 text-white relative z-10 filter drop-shadow-md group-hover:scale-110 transition-transform" />
@@ -127,11 +127,11 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
               {/* Sparkles around box */}
               <span className="absolute -top-3 left-14 text-2xl animate-bounce">✨</span>
               <span className="absolute -bottom-2 right-14 text-2xl animate-bounce" style={{ animationDelay: '0.3s' }}>
-                💖
+                💛
               </span>
             </div>
 
-            <h3 className="font-cursive text-3xl sm:text-4xl font-bold text-pink-700 mt-6 mb-2">
+            <h3 className="font-cursive text-3xl sm:text-4xl font-bold text-amber-900 mt-6 mb-2">
               Tap To Pop The Surprise! 🎁✨
             </h3>
             <p className="text-slate-600 text-sm font-medium leading-relaxed">
@@ -140,9 +140,9 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
 
             <button
               type="button"
-              className="mt-6 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold text-sm shadow-lg hover:shadow-pink-300/60 transform group-hover:scale-105 transition-all"
+              className="mt-6 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-white font-bold text-sm shadow-lg hover:shadow-amber-300/60 transform group-hover:scale-105 transition-all"
             >
-              <Sparkles className="w-4 h-4 text-yellow-200" />
+              <Sparkles className="w-4 h-4 text-yellow-100" />
               <span>Open Surprise Box</span>
             </button>
           </div>
@@ -151,13 +151,13 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
         /* SURPRISE BOX STATE 2: POPPED (Photos Exploded Out) */
         <div className="flex flex-col items-center">
           {/* Popped Status Celebration Banner */}
-          <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 p-4 sm:p-5 rounded-2xl bg-white/85 backdrop-blur-md border border-pink-200 shadow-sm animate-fade-in">
+          <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 p-4 sm:p-5 rounded-2xl bg-white/90 backdrop-blur-md border border-amber-200 shadow-sm animate-fade-in">
             <div className="flex items-center gap-3 text-left">
-              <span className="p-2.5 rounded-full bg-pink-100 text-pink-600 text-xl">
+              <span className="p-2.5 rounded-full bg-amber-100 text-amber-700 text-xl">
                 🎁✨
               </span>
               <div>
-                <h4 className="font-cursive text-2xl font-bold text-pink-600">
+                <h4 className="font-cursive text-2xl font-bold text-amber-800">
                   Surprise Box Unlocked!
                 </h4>
                 <p className="text-xs text-slate-500">
@@ -169,16 +169,16 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
             <div className="flex items-center gap-2">
               <button
                 onClick={handleRepackBox}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white hover:bg-pink-50 text-slate-700 hover:text-pink-600 font-semibold text-xs shadow-xs border border-pink-200 transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white hover:bg-amber-50 text-slate-700 hover:text-amber-800 font-semibold text-xs shadow-xs border border-amber-200 transition-colors"
                 title="Pack photos back into the surprise box to pop them again"
               >
-                <RotateCcw className="w-3.5 h-3.5 text-pink-500" />
+                <RotateCcw className="w-3.5 h-3.5 text-amber-600" />
                 <span>Re-pack Box 🎁</span>
               </button>
 
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-semibold text-xs shadow-xs transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-amber-600 hover:bg-amber-700 text-white font-semibold text-xs shadow-xs transition-colors"
               >
                 <Plus className="w-3.5 h-3.5" />
                 <Camera className="w-3.5 h-3.5" />
@@ -197,21 +197,21 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
                   transform: `rotate(${photo.rotation || 0}deg)`,
                   animationDelay: `${index * 0.12}s`,
                 }}
-                className="animate-pop-out group relative bg-white p-4 pb-6 rounded-md shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:rotate-0 cursor-pointer border border-pink-100"
+                className="animate-pop-out group relative bg-white p-4 pb-6 rounded-md shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:rotate-0 cursor-pointer border border-amber-100"
               >
                 {/* Washi tape on top */}
                 <div className="washi-tape" />
 
                 {/* Photo Container */}
-                <div className="relative aspect-[4/5] w-full bg-pink-50 rounded overflow-hidden mb-4 border border-slate-100">
+                <div className="relative aspect-[4/5] w-full bg-amber-50/50 rounded overflow-hidden mb-4 border border-slate-100">
                   <img
                     src={photo.url}
                     alt={photo.title}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-pink-900/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="p-2.5 rounded-full bg-white/90 text-pink-600 shadow-md">
+                  <div className="absolute inset-0 bg-amber-900/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="p-2.5 rounded-full bg-white/95 text-amber-700 shadow-md">
                       <ZoomIn className="w-5 h-5" />
                     </span>
                   </div>
@@ -222,11 +222,11 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
                   <p className="font-cursive text-2xl font-bold text-slate-800 tracking-wide line-clamp-1">
                     {photo.title}
                   </p>
-                  <p className="font-handwriting text-lg text-pink-600 line-clamp-2 mt-0.5">
+                  <p className="font-handwriting text-lg text-amber-800 line-clamp-2 mt-0.5">
                     {photo.caption}
                   </p>
                   <div className="mt-2 flex items-center justify-center gap-1.5 text-[11px] text-slate-400 font-sans">
-                    <Calendar className="w-3 h-3 text-pink-400" />
+                    <Calendar className="w-3 h-3 text-amber-500" />
                     <span>{photo.date}</span>
                   </div>
                 </div>
@@ -249,14 +249,14 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
             {/* Close button */}
             <button
               onClick={() => setSelectedPhoto(null)}
-              className="absolute top-4 right-4 p-2 rounded-full bg-slate-100 hover:bg-pink-100 text-slate-600 hover:text-pink-600 transition-colors z-10"
+              className="absolute top-4 right-4 p-2 rounded-full bg-slate-100 hover:bg-amber-100 text-slate-600 hover:text-amber-700 transition-colors z-10"
               aria-label="Close photo preview"
             >
               <X className="w-5 h-5" />
             </button>
 
             {/* Full Image */}
-            <div className="rounded-2xl overflow-hidden max-h-[62vh] bg-pink-50 mb-6 flex items-center justify-center border border-pink-100">
+            <div className="rounded-2xl overflow-hidden max-h-[62vh] bg-amber-50/50 mb-6 flex items-center justify-center border border-amber-100">
               <img
                 src={selectedPhoto.url}
                 alt={selectedPhoto.title}
@@ -270,16 +270,16 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
                 <h3 className="font-cursive text-3xl font-bold text-slate-900">
                   {selectedPhoto.title}
                 </h3>
-                <span className="flex items-center gap-1 text-xs font-semibold px-3 py-1 bg-pink-100 text-pink-700 rounded-full">
+                <span className="flex items-center gap-1 text-xs font-semibold px-3 py-1 bg-amber-100 text-amber-800 rounded-full">
                   <Calendar className="w-3.5 h-3.5" />
                   {selectedPhoto.date}
                 </span>
               </div>
-              <p className="font-handwriting text-2xl text-pink-600 mb-3">
+              <p className="font-handwriting text-2xl text-amber-800 mb-3">
                 "{selectedPhoto.caption}"
               </p>
               {selectedPhoto.note && (
-                <p className="text-slate-600 text-sm leading-relaxed border-t border-pink-100 pt-3">
+                <p className="text-slate-600 text-sm leading-relaxed border-t border-amber-100 pt-3">
                   {selectedPhoto.note}
                 </p>
               )}
@@ -291,7 +291,7 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
                   sounds.playPop();
                   setSelectedPhoto(null);
                 }}
-                className="px-5 py-2 rounded-full bg-pink-600 text-white text-xs font-semibold hover:bg-pink-700 transition-colors flex items-center gap-1.5 shadow-sm"
+                className="px-5 py-2 rounded-full bg-amber-600 text-white text-xs font-semibold hover:bg-amber-700 transition-colors flex items-center gap-1.5 shadow-sm"
               >
                 <Heart className="w-3.5 h-3.5 fill-white" />
                 <span>Cherish This Memory</span>

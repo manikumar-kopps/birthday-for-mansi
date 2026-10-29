@@ -5,18 +5,18 @@ export default {
     extend: {
       colors: {
         pastel: {
-          pink: '#ffd1dc',
-          rose: '#fca5a5',
-          cream: '#fffaf5',
-          blush: '#ffe4e6',
-          lavender: '#f3e8ff',
-          purple: '#e9d5ff',
-          peach: '#ffedd5',
+          yellow: '#fef08a',
+          gold: '#f59e0b',
+          amber: '#fbbf24',
+          sunshine: '#fde047',
+          warmSun: '#eab308',
+          honey: '#d97706',
+          cream: '#fffdf5',
           butter: '#fef3c7',
-          mint: '#e6fffa',
+          peach: '#ffedd5',
           softWhite: '#ffffff',
-          darkPink: '#e11d48',
-          hotPink: '#f43f5e',
+          darkGold: '#b45309',
+          warmAmber: '#d97706',
         },
       },
       fontFamily: {
@@ -35,8 +35,8 @@ export default {
           '50%': { transform: 'translateY(-20px) rotate(4deg)' },
         },
         pulseGlow: {
-          '0%, 100%': { opacity: '0.8', transform: 'scale(1)', filter: 'drop-shadow(0 0 12px rgba(244,63,94,0.6))' },
-          '50%': { opacity: '1', transform: 'scale(1.08)', filter: 'drop-shadow(0 0 24px rgba(244,63,94,0.9))' },
+          '0%, 100%': { opacity: '0.85', transform: 'scale(1)', filter: 'drop-shadow(0 0 14px rgba(245,158,11,0.6))' },
+          '50%': { opacity: '1', transform: 'scale(1.08)', filter: 'drop-shadow(0 0 28px rgba(234,179,8,0.95))' },
         },
         sparkle: {
           '0%, 100%': { transform: 'scale(0.8) rotate(0deg)', opacity: '0.4' },

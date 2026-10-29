@@ -44,33 +44,33 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Decorative Floating Balloons */}
       <div className="absolute top-12 left-6 sm:left-16 pointer-events-none animate-floatSlow">
         <div className="relative">
-          <div className="w-14 h-18 bg-pink-300 rounded-full shadow-lg opacity-80"></div>
-          <div className="w-0.5 h-16 bg-pink-400/50 mx-auto"></div>
+          <div className="w-14 h-18 bg-amber-300 rounded-full shadow-lg opacity-85"></div>
+          <div className="w-0.5 h-16 bg-amber-400/50 mx-auto"></div>
         </div>
       </div>
       <div className="absolute top-24 right-8 sm:right-20 pointer-events-none animate-float" style={{ animationDelay: '1.2s' }}>
         <div className="relative">
-          <div className="w-16 h-20 bg-purple-300 rounded-full shadow-lg opacity-80"></div>
-          <div className="w-0.5 h-16 bg-purple-400/50 mx-auto"></div>
+          <div className="w-16 h-20 bg-yellow-300 rounded-full shadow-lg opacity-85"></div>
+          <div className="w-0.5 h-16 bg-yellow-400/50 mx-auto"></div>
         </div>
       </div>
       <div className="absolute bottom-20 left-12 pointer-events-none hidden md:block animate-float" style={{ animationDelay: '2.5s' }}>
         <div className="relative">
-          <div className="w-12 h-16 bg-rose-200 rounded-full shadow-lg opacity-75"></div>
-          <div className="w-0.5 h-14 bg-rose-300/50 mx-auto"></div>
+          <div className="w-12 h-16 bg-orange-200 rounded-full shadow-lg opacity-80"></div>
+          <div className="w-0.5 h-14 bg-orange-300/50 mx-auto"></div>
         </div>
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
         {/* Cute crown or badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-100/90 text-pink-700 text-sm font-semibold tracking-wide border border-pink-200 mb-6 shadow-sm">
-          <Heart className="w-4 h-4 fill-pink-500 text-pink-500" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/90 text-amber-800 text-sm font-semibold tracking-wide border border-amber-200 mb-6 shadow-sm">
+          <Heart className="w-4 h-4 fill-amber-500 text-amber-500" />
           <span>It's Your Special Day Today</span>
-          <Sparkles className="w-4 h-4 text-amber-500" />
+          <Sparkles className="w-4 h-4 text-amber-600" />
         </div>
 
         {/* Main Heading */}
-        <h1 className="font-cursive text-5xl sm:text-7xl lg:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-rose-500 to-purple-600 drop-shadow-sm mb-4 leading-tight">
+        <h1 className="font-cursive text-5xl sm:text-7xl lg:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-700 drop-shadow-sm mb-4 leading-tight">
           {title}
         </h1>
 
@@ -89,10 +89,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <div key={i} className="flex flex-col items-center">
                   {candlesLit ? (
                     <div
-                      className="w-3.5 h-6 bg-gradient-to-t from-orange-400 via-yellow-300 to-white rounded-full animate-flameFlicker transition-all duration-300"
+                      className="w-3.5 h-6 bg-gradient-to-t from-orange-500 via-yellow-300 to-white rounded-full animate-flameFlicker transition-all duration-300"
                       style={{
                         animationDelay: `${i * 0.2}s`,
-                        boxShadow: '0 0 16px #f59e0b, 0 0 30px #f43f5e',
+                        boxShadow: '0 0 16px #f59e0b, 0 0 30px #eab308',
                       }}
                     />
                   ) : (
@@ -103,22 +103,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     </div>
                   )}
                   {/* Candle Stick */}
-                  <div className="w-2.5 h-10 bg-gradient-to-b from-pink-200 via-white to-pink-300 rounded-t shadow-sm border border-pink-300/50"></div>
+                  <div className="w-2.5 h-10 bg-gradient-to-b from-amber-200 via-yellow-100 to-amber-300 rounded-t shadow-sm border border-amber-300/50"></div>
                 </div>
               ))}
             </div>
 
             {/* Cake Top Tier */}
-            <div className="relative w-36 h-14 bg-gradient-to-b from-pink-100 to-pink-200 rounded-t-2xl shadow-inner border-t-2 border-white flex items-center justify-center overflow-hidden">
+            <div className="relative w-36 h-14 bg-gradient-to-b from-yellow-100 to-amber-200 rounded-t-2xl shadow-inner border-t-2 border-white flex items-center justify-center overflow-hidden">
               <div className="absolute inset-x-0 top-0 h-4 bg-white/70 rounded-b-xl"></div>
-              <span className="text-xs font-cursive font-bold text-pink-600">Pure Love</span>
+              <span className="text-xs font-cursive font-bold text-amber-800">Pure Sunshine</span>
             </div>
 
             {/* Cake Bottom Tier */}
-            <div className="relative w-52 h-18 bg-gradient-to-b from-rose-100 to-pink-300 rounded-t-xl shadow-md border-t-4 border-white/80 flex items-center justify-around px-4">
-              <div className="w-3 h-3 rounded-full bg-pink-400"></div>
-              <div className="w-3 h-3 rounded-full bg-purple-300"></div>
-              <div className="w-3 h-3 rounded-full bg-rose-400"></div>
+            <div className="relative w-52 h-18 bg-gradient-to-b from-amber-100 to-yellow-300 rounded-t-xl shadow-md border-t-4 border-white/80 flex items-center justify-around px-4">
+              <div className="w-3 h-3 rounded-full bg-amber-400"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+              <div className="w-3 h-3 rounded-full bg-orange-400"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-200"></div>
             </div>
 
@@ -139,12 +139,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               onClick={handleMakeWish}
               className={`group px-8 py-3.5 rounded-full font-bold text-lg shadow-lg transition-all duration-300 transform active:scale-95 flex items-center gap-2 border ${
                 candlesLit
-                  ? 'bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 text-white hover:shadow-pink-300 hover:-translate-y-1 border-pink-200'
-                  : 'bg-white text-pink-600 hover:bg-pink-50 border-pink-300 shadow-sm'
+                  ? 'bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-white hover:shadow-amber-300 hover:-translate-y-1 border-yellow-200'
+                  : 'bg-white text-amber-700 hover:bg-amber-50 border-amber-300 shadow-sm'
               }`}
             >
               <span>{candlesLit ? 'Make a Wish ✨' : 'Relight Candles 🕯️'}</span>
-              <Sparkles className="w-5 h-5 text-yellow-300 group-hover:rotate-45 transition-transform" />
+              <Sparkles className="w-5 h-5 text-yellow-200 group-hover:rotate-45 transition-transform" />
             </button>
             <p className="text-xs text-slate-500">
               {candlesLit
@@ -155,11 +155,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Revealed Birthday Wish Card */}
           {showWish && (
-            <div className="mt-8 max-w-lg p-6 rounded-2xl bg-white/90 backdrop-blur-md border-2 border-pink-300 shadow-xl animate-fade-in text-center transform transition-all duration-500">
-              <div className="inline-block p-3 rounded-full bg-pink-100 text-pink-600 mb-3 animate-bounce">
+            <div className="mt-8 max-w-lg p-6 rounded-2xl bg-white/95 backdrop-blur-md border-2 border-amber-300 shadow-xl animate-fade-in text-center transform transition-all duration-500">
+              <div className="inline-block p-3 rounded-full bg-amber-100 text-amber-600 mb-3 animate-bounce">
                 🎂✨
               </div>
-              <h3 className="font-cursive text-3xl font-bold text-pink-600 mb-2">
+              <h3 className="font-cursive text-3xl font-bold text-amber-700 mb-2">
                 Your Wish Has Been Heard!
               </h3>
               <p className="text-slate-700 text-base leading-relaxed italic">
@@ -170,7 +170,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   sounds.playSparkle();
                   triggerStarBurst();
                 }}
-                className="mt-4 text-xs font-semibold text-pink-500 hover:text-pink-700 underline"
+                className="mt-4 text-xs font-semibold text-amber-600 hover:text-amber-800 underline"
               >
                 Send an extra sparkle to the stars ✨
               </button>

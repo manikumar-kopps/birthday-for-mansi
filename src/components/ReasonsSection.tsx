@@ -28,7 +28,7 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
     <section className="relative py-24 px-4 max-w-6xl mx-auto">
       {/* Title */}
       <div className="text-center mb-16">
-        <span className="text-sm font-semibold tracking-widest text-pink-500 uppercase bg-pink-100/80 px-4 py-1.5 rounded-full border border-pink-200">
+        <span className="text-sm font-semibold tracking-widest text-amber-800 uppercase bg-amber-100/90 px-4 py-1.5 rounded-full border border-amber-200">
           Why I Love You
         </span>
         <h2 className="font-cursive text-4xl sm:text-6xl font-bold text-slate-800 mt-3 mb-2">
@@ -57,13 +57,13 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
               >
                 {/* Front of Card */}
                 <div
-                  className={`absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden shadow-md hover:shadow-xl transition-shadow border border-pink-200/80 bg-gradient-to-br ${card.accentColor} glass-card`}
+                  className={`absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden shadow-md hover:shadow-xl transition-shadow border border-amber-200/80 bg-gradient-to-br ${card.accentColor} glass-card`}
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-4xl filter drop-shadow-sm animate-gentleWiggle">
                       {card.emoji}
                     </span>
-                    <span className="p-2 rounded-full bg-white/70 text-pink-500 shadow-xs">
+                    <span className="p-2 rounded-full bg-white/80 text-amber-600 shadow-xs">
                       <RotateCw className="w-4 h-4" />
                     </span>
                   </div>
@@ -77,17 +77,17 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-xs text-pink-600 font-semibold tracking-wide">
+                  <div className="flex items-center gap-1.5 text-xs text-amber-800 font-semibold tracking-wide">
                     <span>Tap to reveal secret message</span>
-                    <span>🌸</span>
+                    <span>🌻</span>
                   </div>
                 </div>
 
                 {/* Back of Card */}
-                <div className="absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden rotate-y-180 bg-white/95 border-2 border-pink-300 shadow-xl">
-                  <div className="flex items-center justify-between border-b border-pink-100 pb-2">
-                    <div className="flex items-center gap-1 text-xs font-bold text-pink-600 uppercase tracking-wider">
-                      <Heart className="w-3.5 h-3.5 fill-pink-500" />
+                <div className="absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden rotate-y-180 bg-white/95 border-2 border-amber-300 shadow-xl">
+                  <div className="flex items-center justify-between border-b border-amber-100 pb-2">
+                    <div className="flex items-center gap-1 text-xs font-bold text-amber-800 uppercase tracking-wider">
+                      <Heart className="w-3.5 h-3.5 fill-amber-500" />
                       <span>From My Heart</span>
                     </div>
                     <span className="text-xs text-slate-400">Tap to flip back</span>
@@ -97,8 +97,8 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
                     "{card.longDesc}"
                   </p>
 
-                  <div className="flex items-center justify-end text-pink-400 text-xs font-cursive text-xl font-bold">
-                    Forever Yours 💕
+                  <div className="flex items-center justify-end text-amber-600 text-xs font-cursive text-xl font-bold">
+                    Forever Yours ☀️💛
                   </div>
                 </div>
               </div>

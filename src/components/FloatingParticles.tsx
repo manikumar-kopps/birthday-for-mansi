@@ -12,7 +12,7 @@ interface Particle {
 
 export const FloatingParticles: React.FC = () => {
   const particles: Particle[] = useMemo(() => {
-    const symbols = ['💗', '✨', '🌸', '💖', '⭐', '🌷', '💕', '☁️'];
+    const symbols = ['☀️', '✨', '🌻', '💛', '⭐', '🌼', '🍯', '☁️'];
     return Array.from({ length: 24 }).map((_, i) => ({
       id: i,
       char: symbols[i % symbols.length],
