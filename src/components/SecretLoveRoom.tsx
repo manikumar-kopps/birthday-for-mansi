@@ -56,7 +56,7 @@ export const SecretLoveRoom: React.FC<SecretRoomProps> = ({
     <section className="relative py-24 px-4 max-w-4xl mx-auto">
       {/* Title */}
       <div className="text-center mb-12">
-        <span className="text-sm font-semibold tracking-widest text-amber-800 uppercase bg-amber-100 px-4 py-1.5 rounded-full border border-amber-300">
+        <span className="text-sm font-semibold tracking-widest text-yellow-900 uppercase bg-yellow-100 px-4 py-1.5 rounded-full border border-yellow-300">
           Private Sanctuary 🗝️
         </span>
         <h2 className="font-cursive text-4xl sm:text-6xl font-bold text-slate-800 mt-3 mb-2">
@@ -70,18 +70,18 @@ export const SecretLoveRoom: React.FC<SecretRoomProps> = ({
       {!isUnlocked ? (
         // Locked Vault Screen
         <div
-          className={`max-w-md mx-auto p-8 rounded-3xl bg-white/85 backdrop-blur-md border-2 border-amber-300 shadow-xl text-center transition-transform ${
+          className={`max-w-md mx-auto p-8 rounded-3xl bg-white/90 backdrop-blur-md border-2 border-yellow-300 shadow-xl text-center transition-transform ${
             isShaking ? 'animate-gentleWiggle' : ''
           }`}
         >
           {/* Glowing Lock Icon */}
           <div className="relative my-4 flex justify-center items-center">
-            <div className="w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 shadow-inner animate-pulse">
+            <div className="w-20 h-20 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-800 shadow-inner animate-pulse border border-yellow-200">
               <Lock className="w-10 h-10" />
             </div>
           </div>
 
-          <h3 className="font-cursive text-3xl font-bold text-amber-900 mb-2">
+          <h3 className="font-cursive text-3xl font-bold text-yellow-950 mb-2">
             Enter Secret Passcode
           </h3>
           <p className="text-xs text-slate-500 mb-6">
@@ -98,12 +98,12 @@ export const SecretLoveRoom: React.FC<SecretRoomProps> = ({
                   if (errorMsg) setErrorMsg('');
                 }}
                 placeholder="Type the secret word..."
-                className="w-full px-5 py-3 pr-12 rounded-full border-2 border-amber-300 focus:border-amber-500 focus:outline-none text-center font-mono text-base tracking-wider bg-white/90 shadow-inner"
+                className="w-full px-5 py-3 pr-12 rounded-full border-2 border-yellow-300 focus:border-yellow-500 focus:outline-none text-center font-mono text-base tracking-wider bg-white shadow-inner"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-amber-700"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-yellow-700"
                 title={showPassword ? 'Hide password' : 'Show password'}
               >
                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -118,24 +118,24 @@ export const SecretLoveRoom: React.FC<SecretRoomProps> = ({
 
             <button
               type="submit"
-              className="w-full py-3.5 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-slate-900 font-bold text-sm shadow-md hover:shadow-amber-300 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 border border-amber-400"
+              className="w-full py-3.5 rounded-full bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-400 text-yellow-950 font-extrabold text-sm shadow-md hover:shadow-yellow-300/80 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 border-2 border-yellow-300"
             >
-              <Key className="w-4 h-4 text-slate-900" />
+              <Key className="w-4 h-4 text-yellow-950" />
               <span>Unlock Secret Room ✨</span>
             </button>
           </form>
 
           {/* Hint Accordion */}
-          <div className="mt-6 pt-4 border-t border-amber-200">
+          <div className="mt-6 pt-4 border-t border-yellow-200">
             <button
               type="button"
               onClick={() => setShowHint(!showHint)}
-              className="text-xs font-semibold text-amber-800 hover:text-amber-950 underline flex items-center justify-center gap-1 mx-auto"
+              className="text-xs font-semibold text-yellow-800 hover:text-yellow-950 underline flex items-center justify-center gap-1 mx-auto"
             >
               <span>{showHint ? 'Hide Hint 💡' : 'Need a Hint? 💡'}</span>
             </button>
             {showHint && (
-              <div className="mt-3 p-3 rounded-xl bg-amber-50 border border-amber-300 text-xs text-amber-900 leading-relaxed font-medium animate-fade-in">
+              <div className="mt-3 p-3 rounded-xl bg-yellow-50 border border-yellow-300 text-xs text-yellow-950 leading-relaxed font-medium animate-fade-in">
                 {hint}
               </div>
             )}
@@ -143,26 +143,26 @@ export const SecretLoveRoom: React.FC<SecretRoomProps> = ({
         </div>
       ) : (
         // Unlocked Secret Room
-        <div className="max-w-2xl mx-auto p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-amber-50 via-white to-yellow-50 border-2 border-amber-300 shadow-2xl animate-fade-in relative">
+        <div className="max-w-2xl mx-auto p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-yellow-50/80 via-white to-amber-50/50 border-2 border-yellow-300 shadow-2xl animate-fade-in relative">
           {/* Re-lock Button */}
-          <div className="flex justify-between items-center pb-4 mb-6 border-b border-amber-200">
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-900 uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
+          <div className="flex justify-between items-center pb-4 mb-6 border-b border-yellow-200">
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-yellow-950 uppercase tracking-wider bg-yellow-100 px-3 py-1 rounded-full border border-yellow-300">
               <Unlock className="w-3.5 h-3.5" />
               <span>Vault Unlocked ☀️</span>
             </span>
             <button
               onClick={handleRelock}
-              className="px-3.5 py-1 rounded-full text-xs font-semibold bg-white border border-amber-300 text-amber-800 hover:bg-amber-100 transition-colors shadow-xs"
+              className="px-3.5 py-1 rounded-full text-xs font-semibold bg-white border border-yellow-300 text-yellow-900 hover:bg-yellow-100 transition-colors shadow-xs"
             >
               Lock Vault 🔒
             </button>
           </div>
 
           <div className="text-center mb-8">
-            <div className="inline-block p-3 rounded-full bg-amber-100 text-amber-700 mb-3 animate-bounce">
+            <div className="inline-block p-3 rounded-full bg-yellow-100 text-yellow-800 mb-3 animate-bounce border border-yellow-200">
               <Sparkles className="w-7 h-7" />
             </div>
-            <h3 className="font-cursive text-3xl sm:text-5xl font-bold text-amber-900 mb-2">
+            <h3 className="font-cursive text-3xl sm:text-5xl font-bold text-yellow-950 mb-2">
               {unlockedTitle}
             </h3>
             <p className="text-xs text-slate-500 font-sans">
@@ -171,7 +171,7 @@ export const SecretLoveRoom: React.FC<SecretRoomProps> = ({
           </div>
 
           {/* Hidden Picture */}
-          <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg border-4 border-white mb-8 bg-amber-100 flex items-center justify-center">
+          <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg border-4 border-white mb-8 bg-yellow-100 flex items-center justify-center">
             <img
               src={secretPhotoUrl}
               alt="Secret Memory"
@@ -190,9 +190,9 @@ export const SecretLoveRoom: React.FC<SecretRoomProps> = ({
           </div>
 
           {/* Extra Birthday Wish */}
-          <div className="p-6 rounded-2xl bg-white/90 border-2 border-amber-300 shadow-sm text-center">
-            <Heart className="w-6 h-6 fill-amber-500 text-amber-500 mx-auto mb-2" />
-            <h4 className="font-cursive text-2xl font-bold text-amber-900 mb-1">
+          <div className="p-6 rounded-2xl bg-white/95 border-2 border-yellow-300 shadow-xs text-center">
+            <Heart className="w-6 h-6 fill-yellow-500 text-yellow-500 mx-auto mb-2" />
+            <h4 className="font-cursive text-2xl font-bold text-yellow-950 mb-1">
               My Secret Birthday Wish
             </h4>
             <p className="text-slate-800 text-sm sm:text-base italic font-serif">

@@ -71,7 +71,7 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
   return (
     <section className="relative py-24 px-4 max-w-4xl mx-auto text-center">
       <div className="mb-10">
-        <span className="text-sm font-semibold tracking-widest text-amber-800 uppercase bg-amber-100/90 px-4 py-1.5 rounded-full border border-amber-300">
+        <span className="text-sm font-semibold tracking-widest text-yellow-900 uppercase bg-yellow-100/90 px-4 py-1.5 rounded-full border border-yellow-300">
           Birthday Game 🎂
         </span>
         <h2 className="font-cursive text-4xl sm:text-6xl font-bold text-slate-800 mt-3 mb-2">
@@ -80,15 +80,15 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
         <p className="text-slate-600 text-sm sm:text-base font-medium max-w-lg mx-auto">
           {subtitle}
         </p>
-        <p className="text-xs text-amber-700 mt-2 font-medium">
+        <p className="text-xs text-yellow-800 mt-2 font-medium">
           💡 Tap candles individually to light/extinguish them (or press keys 1-{initialCandles})
         </p>
       </div>
 
       {/* Interactive Birthday Cake Container */}
-      <div className="relative max-w-md mx-auto p-8 rounded-3xl bg-white/80 backdrop-blur-md border-2 border-amber-300 shadow-xl flex flex-col items-center">
+      <div className="relative max-w-md mx-auto p-8 rounded-3xl bg-white/90 backdrop-blur-md border-2 border-yellow-300 shadow-xl flex flex-col items-center">
         {/* Status Badge */}
-        <div className="mb-6 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-300 text-xs font-semibold text-amber-800">
+        <div className="mb-6 px-4 py-1.5 rounded-full bg-yellow-50 border border-yellow-300 text-xs font-semibold text-yellow-900">
           {litCount > 0
             ? `${litCount} of ${initialCandles} candles are glowing bright 🔥`
             : 'All candles blown out! Make a wish ✨'}
@@ -110,10 +110,10 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
                 <div className="h-7 flex items-center justify-center">
                   {isLit ? (
                     <div
-                      className="w-3.5 h-6 bg-gradient-to-t from-amber-500 via-yellow-300 to-white rounded-full animate-flameFlicker"
+                      className="w-3.5 h-6 bg-gradient-to-t from-amber-400 via-yellow-200 to-white rounded-full animate-flameFlicker"
                       style={{
                         animationDelay: `${idx * 0.15}s`,
-                        boxShadow: '0 0 14px #f59e0b, 0 0 25px #d97706',
+                        boxShadow: '0 0 14px #fde047, 0 0 24px #f59e0b',
                       }}
                     />
                   ) : (
@@ -125,10 +125,10 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
                 {/* Wick & Candle Body */}
                 <div className="w-0.5 h-1.5 bg-slate-700"></div>
                 <div
-                  className={`w-3 h-12 rounded-t shadow-sm border border-amber-300/70 ${
+                  className={`w-3 h-12 rounded-t shadow-xs border border-yellow-300/80 ${
                     idx % 2 === 0
-                      ? 'bg-gradient-to-b from-yellow-200 via-amber-100 to-yellow-300'
-                      : 'bg-gradient-to-b from-amber-200 via-yellow-50 to-amber-300'
+                      ? 'bg-gradient-to-b from-yellow-200 via-white to-yellow-300'
+                      : 'bg-gradient-to-b from-amber-100 via-yellow-50 to-yellow-200'
                   }`}
                 />
               </button>
@@ -136,14 +136,14 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
           </div>
 
           {/* Frosting drips */}
-          <div className="relative w-48 h-16 bg-gradient-to-b from-yellow-100 to-amber-200 rounded-t-3xl shadow-inner border-t-4 border-white flex items-center justify-center">
-            <span className="font-cursive text-xl font-bold text-amber-800">
+          <div className="relative w-48 h-16 bg-gradient-to-b from-yellow-100 to-yellow-200 rounded-t-3xl shadow-inner border-t-4 border-white flex items-center justify-center">
+            <span className="font-cursive text-xl font-bold text-yellow-950">
               Happy Birthday ☀️💛
             </span>
           </div>
 
           {/* Middle Tier with sunflowers & honey */}
-          <div className="relative w-64 h-20 bg-gradient-to-b from-amber-100 to-yellow-300 rounded-t-2xl shadow-md border-t-4 border-white flex items-center justify-around px-6">
+          <div className="relative w-64 h-20 bg-gradient-to-b from-yellow-200 to-amber-200 rounded-t-2xl shadow-md border-t-4 border-white flex items-center justify-around px-6">
             <span className="text-xl">🌻</span>
             <span className="text-xl">✨</span>
             <span className="text-xl">🍯</span>
@@ -152,7 +152,7 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
           </div>
 
           {/* Cake Tray */}
-          <div className="w-76 h-4 bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-200 rounded-full shadow-lg border border-amber-300"></div>
+          <div className="w-76 h-4 bg-gradient-to-r from-yellow-100 via-white to-yellow-100 rounded-full shadow-md border border-yellow-200"></div>
         </div>
 
         {/* Action Controls */}
@@ -161,17 +161,17 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
             <button
               onClick={handleBlowAll}
               disabled={isBlowing}
-              className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-slate-900 font-bold text-sm shadow-md hover:shadow-amber-300 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 border border-amber-400"
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-400 text-yellow-950 font-extrabold text-sm shadow-md hover:shadow-yellow-300/80 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 border-2 border-yellow-300"
             >
-              <Wind className="w-4 h-4 text-slate-900" />
+              <Wind className="w-4 h-4 text-yellow-950" />
               <span>Blow the Candles! 💨</span>
             </button>
           ) : (
             <button
               onClick={handleRelightAll}
-              className="px-6 py-3 rounded-full bg-white hover:bg-amber-50 text-amber-800 font-bold text-sm shadow-md border-2 border-amber-400 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2"
+              className="px-6 py-3 rounded-full bg-white hover:bg-yellow-50 text-yellow-900 font-bold text-sm shadow-xs border-2 border-yellow-300 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2"
             >
-              <RotateCcw className="w-4 h-4 text-amber-700" />
+              <RotateCcw className="w-4 h-4 text-yellow-700" />
               <span>Light Them Again ✨</span>
             </button>
           )}
@@ -179,9 +179,9 @@ export const CakeMiniGame: React.FC<CakeMiniGameProps> = ({
 
         {/* Revealed Celebration Wish */}
         {hasBlown && (
-          <div className="mt-6 p-6 rounded-2xl bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-100 border-2 border-amber-300 shadow-md animate-fade-in text-center">
+          <div className="mt-6 p-6 rounded-2xl bg-gradient-to-r from-yellow-50 via-amber-50/50 to-yellow-100 border-2 border-yellow-300 shadow-md animate-fade-in text-center">
             <div className="text-3xl mb-2 animate-bounce">☀️🎉✨</div>
-            <h4 className="font-cursive text-2xl font-bold text-amber-900 mb-1">
+            <h4 className="font-cursive text-2xl font-bold text-yellow-950 mb-1">
               May all your little dreams come true! 💛
             </h4>
             <p className="text-slate-700 text-sm leading-relaxed font-medium">

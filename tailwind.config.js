@@ -6,17 +6,15 @@ export default {
       colors: {
         pastel: {
           yellow: '#fef08a',
-          gold: '#f59e0b',
-          amber: '#fbbf24',
+          lightYellow: '#fef9c3',
           sunshine: '#fde047',
-          warmSun: '#eab308',
-          honey: '#d97706',
-          cream: '#fffdf5',
-          butter: '#fef3c7',
-          peach: '#ffedd5',
+          softGold: '#facc15',
+          cream: '#fffdf0',
+          butter: '#fefce8',
+          paleLemon: '#fffbeb',
           softWhite: '#ffffff',
-          darkGold: '#b45309',
           warmAmber: '#d97706',
+          textDark: '#78350f',
         },
       },
       fontFamily: {
@@ -35,8 +33,8 @@ export default {
           '50%': { transform: 'translateY(-20px) rotate(4deg)' },
         },
         pulseGlow: {
-          '0%, 100%': { opacity: '0.85', transform: 'scale(1)', filter: 'drop-shadow(0 0 14px rgba(245,158,11,0.6))' },
-          '50%': { opacity: '1', transform: 'scale(1.08)', filter: 'drop-shadow(0 0 28px rgba(234,179,8,0.95))' },
+          '0%, 100%': { opacity: '0.9', transform: 'scale(1)', filter: 'drop-shadow(0 0 16px rgba(253,224,71,0.65))' },
+          '50%': { opacity: '1', transform: 'scale(1.08)', filter: 'drop-shadow(0 0 28px rgba(250,204,21,0.95))' },
         },
         sparkle: {
           '0%, 100%': { transform: 'scale(0.8) rotate(0deg)', opacity: '0.4' },

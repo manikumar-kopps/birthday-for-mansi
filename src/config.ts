@@ -371,7 +371,7 @@ export const defaultBirthdayConfig: BirthdayConfig = {
         shortDesc: "It lights up every room and melts away any gloom.",
         longDesc:
           "There is a genuine, pure magic in your smile. Even on the heaviest days, just seeing your face softens my worries and reminds me of everything good in this world.",
-        accentColor: "from-amber-100 to-yellow-200",
+        accentColor: "from-yellow-50 to-yellow-100",
       },
       {
         id: "r2",
@@ -380,7 +380,7 @@ export const defaultBirthdayConfig: BirthdayConfig = {
         shortDesc: "Grocery trips, quiet tea times, or simple walks feel like adventures.",
         longDesc:
           "With you, doing absolutely nothing feels like the greatest event. You turn simple grocery runs, car rides, and silent evenings into memories I want to replay forever.",
-        accentColor: "from-amber-200 to-yellow-100",
+        accentColor: "from-yellow-100 to-amber-50",
       },
       {
         id: "r3",
@@ -389,7 +389,7 @@ export const defaultBirthdayConfig: BirthdayConfig = {
         shortDesc: "Seeing you happy is my greatest daily victory.",
         longDesc:
           "When you are genuinely excited, laughing until your tummy hurts, my heart swells with so much joy. Your happiness is something I will always protect with all I have.",
-        accentColor: "from-yellow-100 to-amber-200",
+        accentColor: "from-amber-50 to-yellow-100",
       },
       {
         id: "r4",
@@ -398,7 +398,7 @@ export const defaultBirthdayConfig: BirthdayConfig = {
         shortDesc: "Compassionate, gentle, caring, and deeply understanding.",
         longDesc:
           "You treat people and little creatures with such tenderness. The way you care, listen, and show empathy makes you the rarest, most beautiful kind of human.",
-        accentColor: "from-amber-100 to-yellow-300",
+        accentColor: "from-yellow-50 to-amber-100/60",
       },
       {
         id: "r5",
@@ -407,7 +407,7 @@ export const defaultBirthdayConfig: BirthdayConfig = {
         shortDesc: "Your presence inspires me to be kinder, stronger, and wiser.",
         longDesc:
           "Being loved by someone as incredible as you makes me want to grow, achieve, and be the best version of myself so I can give you the life and happiness you truly deserve.",
-        accentColor: "from-yellow-200 to-amber-300",
+        accentColor: "from-yellow-100 to-yellow-200/70",
       },
       {
         id: "r6",
@@ -416,7 +416,7 @@ export const defaultBirthdayConfig: BirthdayConfig = {
         shortDesc: "Stunning in every way, from your gorgeous eyes to your soul.",
         longDesc:
           "You are drop-dead gorgeous, whether you're dressed up or wearing oversized hoodies with messy hair. But even more than that, the beauty of your soul leaves me breathless.",
-        accentColor: "from-amber-50 to-yellow-200",
+        accentColor: "from-[#fffef5] to-yellow-100",
       },
     ],
   },

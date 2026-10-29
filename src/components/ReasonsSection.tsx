@@ -28,8 +28,8 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
     <section className="relative py-24 px-4 max-w-6xl mx-auto">
       {/* Title */}
       <div className="text-center mb-16">
-        <span className="text-sm font-semibold tracking-widest text-amber-800 uppercase bg-amber-100/90 px-4 py-1.5 rounded-full border border-amber-200">
-          Why I Love You
+        <span className="text-sm font-semibold tracking-widest text-yellow-900 uppercase bg-yellow-100/90 px-4 py-1.5 rounded-full border border-yellow-300">
+          Why I Love You ☀️
         </span>
         <h2 className="font-cursive text-4xl sm:text-6xl font-bold text-slate-800 mt-3 mb-2">
           {title}
@@ -57,13 +57,13 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
               >
                 {/* Front of Card */}
                 <div
-                  className={`absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden shadow-md hover:shadow-xl transition-shadow border border-amber-200/80 bg-gradient-to-br ${card.accentColor} glass-card`}
+                  className={`absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden shadow-sm hover:shadow-lg transition-shadow border-2 border-yellow-300/80 bg-gradient-to-br ${card.accentColor} glass-card`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-4xl filter drop-shadow-sm animate-gentleWiggle">
+                    <span className="text-4xl filter drop-shadow-xs animate-gentleWiggle">
                       {card.emoji}
                     </span>
-                    <span className="p-2 rounded-full bg-white/80 text-amber-600 shadow-xs">
+                    <span className="p-2 rounded-full bg-white/90 text-yellow-800 shadow-xs border border-yellow-200">
                       <RotateCw className="w-4 h-4" />
                     </span>
                   </div>
@@ -77,17 +77,17 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-xs text-amber-800 font-semibold tracking-wide">
+                  <div className="flex items-center gap-1.5 text-xs text-yellow-900 font-bold tracking-wide">
                     <span>Tap to reveal secret message</span>
                     <span>🌻</span>
                   </div>
                 </div>
 
                 {/* Back of Card */}
-                <div className="absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden rotate-y-180 bg-white/95 border-2 border-amber-300 shadow-xl">
-                  <div className="flex items-center justify-between border-b border-amber-100 pb-2">
-                    <div className="flex items-center gap-1 text-xs font-bold text-amber-800 uppercase tracking-wider">
-                      <Heart className="w-3.5 h-3.5 fill-amber-500" />
+                <div className="absolute inset-0 w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col justify-between backface-hidden rotate-y-180 bg-[#fffef8] border-2 border-yellow-300 shadow-xl">
+                  <div className="flex items-center justify-between border-b border-yellow-200 pb-2">
+                    <div className="flex items-center gap-1 text-xs font-bold text-yellow-900 uppercase tracking-wider">
+                      <Heart className="w-3.5 h-3.5 fill-yellow-500 text-yellow-500" />
                       <span>From My Heart</span>
                     </div>
                     <span className="text-xs text-slate-400">Tap to flip back</span>
@@ -97,7 +97,7 @@ export const ReasonsSection: React.FC<ReasonsSectionProps> = ({
                     "{card.longDesc}"
                   </p>
 
-                  <div className="flex items-center justify-end text-amber-600 text-xs font-cursive text-xl font-bold">
+                  <div className="flex items-center justify-end text-yellow-800 text-xs font-cursive text-xl font-bold">
                     Forever Yours ☀️💛
                   </div>
                 </div>

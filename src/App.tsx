@@ -17,7 +17,7 @@ import { ConfigEditorModal } from './components/ConfigEditorModal';
 export function App() {
   const [config, setConfig] = useState<BirthdayConfig>(() => {
     try {
-      const saved = localStorage.getItem('birthday_site_config_v8');
+      const saved = localStorage.getItem('birthday_site_config_v9');
       if (saved) return JSON.parse(saved);
     } catch {}
     return defaultBirthdayConfig;
@@ -41,21 +41,21 @@ export function App() {
     };
     setConfig(updated);
     try {
-      localStorage.setItem('birthday_site_config_v8', JSON.stringify(updated));
+      localStorage.setItem('birthday_site_config_v9', JSON.stringify(updated));
     } catch {}
   };
 
   const handleSaveConfig = (newConfig: BirthdayConfig) => {
     setConfig(newConfig);
     try {
-      localStorage.setItem('birthday_site_config_v8', JSON.stringify(newConfig));
+      localStorage.setItem('birthday_site_config_v9', JSON.stringify(newConfig));
     } catch {}
   };
 
   const handleResetConfig = () => {
     setConfig(defaultBirthdayConfig);
     try {
-      localStorage.removeItem('birthday_site_config_v8');
+      localStorage.removeItem('birthday_site_config_v9');
     } catch {}
   };
 
@@ -65,7 +65,7 @@ export function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-amber-50/60 via-yellow-50/40 to-amber-100/30 text-slate-800">
+    <div className="relative min-h-screen bg-gradient-to-b from-[#fffef5] via-[#fefce8] to-[#fef9c3]/35 text-slate-800">
       {/* Background Floating Magic Particles */}
       <FloatingParticles />
 

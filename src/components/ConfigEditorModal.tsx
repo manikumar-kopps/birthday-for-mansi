@@ -41,11 +41,11 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
       <div className="fixed bottom-4 left-4 z-40">
         <button
           onClick={handleOpen}
-          className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 hover:bg-white text-slate-700 hover:text-amber-800 shadow-md border-2 border-amber-300 backdrop-blur-md text-xs font-semibold transition-all hover:scale-105"
+          className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 hover:bg-white text-slate-700 hover:text-yellow-900 shadow-md border-2 border-yellow-300 backdrop-blur-md text-xs font-semibold transition-all hover:scale-105"
           title="Customize Names, Texts & Password"
           aria-label="Customize settings"
         >
-          <Settings className="w-3.5 h-3.5 text-amber-600 animate-spin" style={{ animationDuration: '8s' }} />
+          <Settings className="w-3.5 h-3.5 text-yellow-600 animate-spin" style={{ animationDuration: '8s' }} />
           <span className="hidden sm:inline">Customize Website</span>
         </button>
       </div>
@@ -57,12 +57,12 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
           onClick={handleClose}
         >
           <div
-            className="relative max-w-xl w-full max-h-[85vh] bg-white rounded-3xl p-6 sm:p-8 shadow-2xl overflow-y-auto border-2 border-amber-300"
+            className="relative max-w-xl w-full max-h-[85vh] bg-white rounded-3xl p-6 sm:p-8 shadow-2xl overflow-y-auto border-2 border-yellow-300"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex justify-between items-center mb-6 pb-4 border-b border-amber-100">
+            <div className="flex justify-between items-center mb-6 pb-4 border-b border-yellow-200">
               <div>
-                <h3 className="font-cursive text-3xl font-bold text-amber-800">
+                <h3 className="font-cursive text-3xl font-bold text-yellow-950">
                   Personalize Her Website ✨
                 </h3>
                 <p className="text-xs text-slate-500">
@@ -71,7 +71,7 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
               </div>
               <button
                 onClick={handleClose}
-                className="p-2 text-slate-400 hover:text-amber-800 rounded-full"
+                className="p-2 text-slate-400 hover:text-yellow-800 rounded-full"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -88,7 +88,7 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
                   onChange={(e) =>
                     setFormData({ ...formData, partnerName: e.target.value })
                   }
-                  className="w-full px-4 py-2 rounded-xl border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm"
+                  className="w-full px-4 py-2 rounded-xl border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-sm"
                 />
               </div>
 
@@ -102,7 +102,7 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
                   onChange={(e) =>
                     setFormData({ ...formData, partnerNickname: e.target.value })
                   }
-                  className="w-full px-4 py-2 rounded-xl border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm"
+                  className="w-full px-4 py-2 rounded-xl border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-sm"
                 />
               </div>
 
@@ -119,7 +119,7 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
                       hero: { ...formData.hero, title: e.target.value },
                     })
                   }
-                  className="w-full px-4 py-2 rounded-xl border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm"
+                  className="w-full px-4 py-2 rounded-xl border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-sm"
                 />
               </div>
 
@@ -136,7 +136,7 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
                       secretRoom: { ...formData.secretRoom, password: e.target.value },
                     })
                   }
-                  className="w-full px-4 py-2 rounded-xl border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm font-mono"
+                  className="w-full px-4 py-2 rounded-xl border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-sm font-mono"
                 />
               </div>
 
@@ -153,11 +153,11 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
                       secretRoom: { ...formData.secretRoom, hint: e.target.value },
                     })
                   }
-                  className="w-full px-4 py-2 rounded-xl border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm"
+                  className="w-full px-4 py-2 rounded-xl border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-sm"
                 />
               </div>
 
-              <div className="pt-4 flex items-center justify-between border-t border-amber-100">
+              <div className="pt-4 flex items-center justify-between border-t border-yellow-100">
                 <button
                   type="button"
                   onClick={() => {
@@ -173,9 +173,9 @@ export const ConfigEditorModal: React.FC<ConfigEditorModalProps> = ({
 
                 <button
                   type="submit"
-                  className="px-6 py-2 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900 font-bold text-xs flex items-center gap-1.5 shadow-md border border-amber-400"
+                  className="px-6 py-2 rounded-full bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-400 text-yellow-950 font-extrabold text-xs flex items-center gap-1.5 shadow-md border border-yellow-300"
                 >
-                  <Save className="w-4 h-4 text-slate-900" />
+                  <Save className="w-4 h-4 text-yellow-950" />
                   <span>Save Changes</span>
                 </button>
               </div>

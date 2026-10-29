@@ -98,30 +98,30 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
         <div className="flex flex-col items-center justify-center my-8">
           <div
             onClick={handlePopSurpriseBox}
-            className={`group relative max-w-md w-full bg-gradient-to-br from-amber-200 via-yellow-100 to-amber-100 p-8 sm:p-12 rounded-3xl shadow-2xl border-4 border-amber-300 cursor-pointer text-center select-none transform hover:-translate-y-2 hover:scale-[1.02] active:scale-95 transition-all duration-300 ${
+            className={`group relative max-w-md w-full bg-gradient-to-br from-yellow-200 via-yellow-100 to-amber-100/90 p-8 sm:p-12 rounded-3xl shadow-2xl border-4 border-yellow-300 cursor-pointer text-center select-none transform hover:-translate-y-2 hover:scale-[1.02] active:scale-95 transition-all duration-300 ${
               isBoxShaking ? 'animate-box-shake' : ''
             }`}
           >
             {/* Glowing Aura Ring */}
-            <div className="absolute inset-0 rounded-3xl bg-yellow-400/25 blur-xl animate-pulse pointer-events-none"></div>
+            <div className="absolute inset-0 rounded-3xl bg-yellow-300/35 blur-xl animate-pulse pointer-events-none"></div>
 
             {/* Special Delivery Badge */}
-            <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/95 text-amber-800 font-bold text-xs shadow-sm mb-6 border border-amber-200">
-              <Sparkles className="w-4 h-4 text-amber-500 animate-spin" style={{ animationDuration: '6s' }} />
+            <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/95 text-yellow-900 font-bold text-xs shadow-xs mb-6 border border-yellow-300">
+              <Sparkles className="w-4 h-4 text-yellow-600 animate-spin" style={{ animationDuration: '6s' }} />
               <span>Special Surprise Memory Box</span>
-              <Heart className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+              <Heart className="w-3.5 h-3.5 fill-yellow-500 text-yellow-500" />
             </div>
 
             {/* 3D Animated Gift Box Visual */}
             <div className="relative my-4 flex justify-center items-center">
               {/* Ribbon bow */}
-              <div className="w-32 h-32 rounded-3xl bg-gradient-to-tr from-amber-500 via-yellow-400 to-amber-600 flex items-center justify-center shadow-xl group-hover:rotate-6 transition-transform relative">
+              <div className="w-32 h-32 rounded-3xl bg-gradient-to-tr from-yellow-300 via-amber-200 to-yellow-400 flex items-center justify-center shadow-xl group-hover:rotate-6 transition-transform relative border-2 border-yellow-300">
                 {/* Cross Ribbons */}
-                <div className="absolute inset-x-0 h-6 bg-amber-100/95 top-1/2 -translate-y-1/2 shadow-xs"></div>
-                <div className="absolute inset-y-0 w-6 bg-amber-100/95 left-1/2 -translate-x-1/2 shadow-xs"></div>
+                <div className="absolute inset-x-0 h-6 bg-yellow-100/95 top-1/2 -translate-y-1/2 shadow-xs"></div>
+                <div className="absolute inset-y-0 w-6 bg-yellow-100/95 left-1/2 -translate-x-1/2 shadow-xs"></div>
 
                 {/* Big Gift Icon */}
-                <Gift className="w-16 h-16 text-white relative z-10 filter drop-shadow-md group-hover:scale-110 transition-transform" />
+                <Gift className="w-16 h-16 text-yellow-950 relative z-10 filter drop-shadow-xs group-hover:scale-110 transition-transform" />
               </div>
 
               {/* Sparkles around box */}
@@ -131,7 +131,7 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
               </span>
             </div>
 
-            <h3 className="font-cursive text-3xl sm:text-4xl font-bold text-amber-900 mt-6 mb-2">
+            <h3 className="font-cursive text-3xl sm:text-4xl font-bold text-yellow-950 mt-6 mb-2">
               Tap To Pop The Surprise! 🎁✨
             </h3>
             <p className="text-slate-600 text-sm font-medium leading-relaxed">
@@ -140,9 +140,9 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
 
             <button
               type="button"
-              className="mt-6 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-white font-bold text-sm shadow-lg hover:shadow-amber-300/60 transform group-hover:scale-105 transition-all"
+              className="mt-6 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-400 text-yellow-950 font-extrabold text-sm shadow-md hover:shadow-yellow-300/80 transform group-hover:scale-105 transition-all border border-yellow-300"
             >
-              <Sparkles className="w-4 h-4 text-yellow-100" />
+              <Sparkles className="w-4 h-4 text-yellow-800" />
               <span>Open Surprise Box</span>
             </button>
           </div>
@@ -151,13 +151,13 @@ export const MemoriesGallery: React.FC<MemoriesGalleryProps> = ({
         /* SURPRISE BOX STATE 2: POPPED (Photos Exploded Out) */
         <div className="flex flex-col items-center">
           {/* Popped Status Celebration Banner */}
-          <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 p-4 sm:p-5 rounded-2xl bg-white/90 backdrop-blur-md border border-amber-200 shadow-sm animate-fade-in">
+          <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 p-4 sm:p-5 rounded-2xl bg-white/95 backdrop-blur-md border-2 border-yellow-200 shadow-sm animate-fade-in">
             <div className="flex items-center gap-3 text-left">
-              <span className="p-2.5 rounded-full bg-amber-100 text-amber-700 text-xl">
+              <span className="p-2.5 rounded-full bg-yellow-100 text-yellow-800 text-xl border border-yellow-200">
                 🎁✨
               </span>
               <div>
-                <h4 className="font-cursive text-2xl font-bold text-amber-800">
+                <h4 className="font-cursive text-2xl font-bold text-yellow-950">
                   Surprise Box Unlocked!
                 </h4>
                 <p className="text-xs text-slate-500">
